@@ -1,0 +1,1 @@
+StMaster.exe /regserver

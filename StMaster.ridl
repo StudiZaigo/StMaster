@@ -1,0 +1,72 @@
+// ************************************************************************ //
+// 警告
+// -------
+// このファイルはタイプ ライブラリ インポータまたはタイプ ライブラリ エディタで生成されています。
+// 構文エラーがない場合には、エディタはファイルへの変更を構文解析します。
+// ただし、エディタで変更したときは、このファイルは再生成され、
+// コメントやフォーマットの変更は失われます。
+// ************************************************************************ //
+// 2015/09/27 15:08:42 に生成されたファイル (- $Rev: 12980 $, 15011835)
+
+[
+  uuid(0EB22D3C-2C47-401D-AC53-44A9B209FC93),
+  version(1.0)
+
+]
+library StMaster
+{
+
+  importlib("stdole2.tlb");
+
+  interface IStMaster;
+  coclass StMaster;
+  coclass CoStMaster;
+
+
+  [
+    uuid(44E4330F-F220-4109-8C24-C51B5C0E3E3B),
+    helpstring("StMaster Object のディスパッチ インターフェイス"),
+    dual,
+    oleautomation
+  ]
+  interface IStMaster: IDispatch
+  {
+    [propget, id(0x00000001)]
+    HRESULT _stdcall Enable([out, retval] VARIANT_BOOL* Value);
+    [propget, id(0x00000002)]
+    HRESULT _stdcall RotatorCount([out, retval] long* Value);
+    [propget, id(0x00000003)]
+    HRESULT _stdcall RotatorIndex([out, retval] long* Value);
+    [id(0x00000004)]
+    VARIANT_BOOL _stdcall GetRotatorActive([in] long RotatorIndex);
+    [id(0x00000005)]
+    HRESULT _stdcall GetRotatorTitle([in] long RotatorIndex, [out] BSTR* GetRotatorTitle);
+    [id(0x00000006)]
+    long _stdcall GetRotatorAzumuth([in] long RotatorIndex);
+    [id(0x00000009)]
+    VARIANT_BOOL _stdcall Move([in] long RotatorIndex, [in] long Azimuth);
+    [id(0x00000007)]
+    VARIANT_BOOL _stdcall Open([in] long RotatorIndex);
+    [id(0x00000008)]
+    VARIANT_BOOL _stdcall Close([in] long RotatorIndex);
+    [id(0x0000000A)]
+    VARIANT_BOOL _stdcall Rotate([in] long Azimuth, [in] float Freq);
+  };
+
+  [
+    uuid(D182F8B5-2ED4-4E91-92B7-1E9D3BD93A32),
+    helpstring("StMaster Object")
+  ]
+  coclass StMaster
+  {
+    [default] interface IStMaster;
+  };
+
+  [
+    uuid(69D48E31-E66E-447D-8B22-DAAE4652301C)
+  ]
+  coclass CoStMaster
+  {
+  };
+
+};

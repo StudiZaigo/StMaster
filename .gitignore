@@ -67,3 +67,11 @@ __recovery/
 
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
+
+# Add by JA7FKF 	2020-09-09
+Deploy/
+Documents/
+StMASTER 1.0.0/
+Win32/
+
+

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Main>
+		<Left Type="9">1461</Left>
+		<Top Type="9">479</Top>
+		<Version Type="10">1.0.1.0</Version>
+	</Main>
+	<CtrlTable>
+		<Enable Type="2">-1</Enable>
+	</CtrlTable>
+	<RelayBoxs>
+		<RelayBox_0>
+			<Enable Type="2">0</Enable>
+			<Count Type="9">8</Count>
+			<BaudRate Type="10">9600</BaudRate>
+			<DataBits Type="10">8</DataBits>
+			<Parity Type="10">NONE</Parity>
+			<StopBits Type="10">1</StopBits>
+			<FlowControl Type="10">SOFTWARE</FlowControl>
+			<Mode Type="10">BigBang</Mode>
+			<SerialNo Type="10"></SerialNo>
+			<Port Type="10"></Port>
+		</RelayBox_0>
+		<RelayBox_1>
+			<Enable Type="2">0</Enable>
+			<Count Type="9">8</Count>
+			<BaudRate Type="10">9600</BaudRate>
+			<DataBits Type="10">8</DataBits>
+			<Parity Type="10">NONE</Parity>
+			<StopBits Type="10">1</StopBits>
+			<FlowControl Type="10">NONE</FlowControl>
+			<Mode Type="10">ComPort</Mode>
+			<SerialNo Type="10"></SerialNo>
+			<Port Type="10"></Port>
+		</RelayBox_1>
+	</RelayBoxs>
+	<Rotators>
+		<Rotator_0>
+			<Title Type="10">RTC-59</Title>
+			<MapFileName Type="10">C:\Delphi Projects\StMaster\WORLD1.bmp</MapFileName>
+			<Enable Type="2">-1</Enable>
+			<AutoActive Type="2">0</AutoActive>
+			<Model Type="10">RTC-59</Model>
+			<CenterPosition Type="9">0</CenterPosition>
+			<AzimuthAngle Type="9">0</AzimuthAngle>
+			<RotationSpeed Type="10">4</RotationSpeed>
+			<Home Type="9">0</Home>
+			<ReturnHome Type="2">0</ReturnHome>
+			<Offset Type="9">0</Offset>
+			<CommandB Type="10">Y11,WAIT100</CommandB>
+			<CommandA Type="10">WAIT100,Y10</CommandA>
+			<RelaysCount Type="9">4</RelaysCount>
+			<Port Type="10"></Port>
+			<BaudRate Type="10">9600</BaudRate>
+			<DataBits Type="10">8</DataBits>
+			<Parity Type="10">None</Parity>
+			<StopBits Type="10">1</StopBits>
+			<FlowControl Type="10">None</FlowControl>
+		</Rotator_0>
+		<Rotator_1>
+			<Title Type="10">GS-23</Title>
+			<MapFileName Type="10">C:\Delphi Projects\StMaster\WORLD1.bmp</MapFileName>
+			<Enable Type="2">-1</Enable>
+			<AutoActive Type="2">0</AutoActive>
+			<Model Type="10">GS-232A</Model>
+			<CenterPosition Type="9">1</CenterPosition>
+			<AzimuthAngle Type="9">1</AzimuthAngle>
+			<RotationSpeed Type="10">4</RotationSpeed>
+			<Home Type="9">270</Home>
+			<ReturnHome Type="2">-1</ReturnHome>
+			<Offset Type="9">-45</Offset>
+			<CommandB Type="10"></CommandB>
+			<CommandA Type="10"></CommandA>
+			<RelaysCount Type="9">0</RelaysCount>
+			<Port Type="10">COM6</Port>
+			<BaudRate Type="10">9600</BaudRate>
+			<DataBits Type="10">8</DataBits>
+			<Parity Type="10">None</Parity>
+			<StopBits Type="10">1</StopBits>
+			<FlowControl Type="10">None</FlowControl>
+		</Rotator_1>
+	</Rotators>
+</root>
